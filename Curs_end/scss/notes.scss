@@ -1,0 +1,21 @@
+// block {
+//     @media desktop {
+//         card {
+//             width: calc((100% - 60px) / 3);
+
+//             &:not(:nth-child(3n)) {
+//                 margin-right: 30px;
+//             }
+//         }
+//     }
+
+//     @media mobile {
+//         card {
+//             width: calc((100% - 30px)/ 2);
+
+//             &:nth-child(2n) {
+//                 margin-left: 20px;
+//             }
+//         }
+//     }
+// }

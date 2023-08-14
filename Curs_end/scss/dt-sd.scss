@@ -1,0 +1,11 @@
+@media (max-width: $dt-sd) {
+    .content {
+        margin: auto;
+        max-width: $dt-sd;
+        background-size: 800px 700px;
+    }
+    .main__better__cards-card{
+        width: 30%;
+    }
+    
+}

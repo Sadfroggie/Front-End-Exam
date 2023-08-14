@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.mobile-slash{
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.content {
+    margin: auto;
+    max-width: $dt-hd;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 100%;
+}
+
+.main {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &-ham img {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        width: 108px;
+        height: 50px;
+        margin-top: 50px;
+        img {
+            // max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    &__info-menu {
+        display: flex;
+        height: 25px;
+        margin-bottom: 6px;
+    }
+
+    &__language-switcher,
+    &__address,
+    &__cell {
+        align-items: center;
+        margin-right: 6px;
+
+        &:after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #E6E6F0;
+            margin-left: 6px;
+        }
+    }
+
+    &__language-switcher {
+        display: flex;
+
+        a {
+            @include lang-switch;
+            color: $tab-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 7px;
+            border-radius: 8px;
+            transition-property: background;
+            transition-duration: 0.2s;
+
+            &.active {
+                color:$main-text;
+                background: $hover;
+                cursor: default;
+                pointer-events: none;
+            }
+
+            &:hover:not(.active) {
+                background: $tnoactivehover;
+            }
+        }
+    }
+
+    &__address {
+        display: flex;
+        @include adress;
+        color: $tab-color
+    }
+
+    &__cell {
+        display: flex;
+
+        a {
+            @include cell;
+            color: $tab-color;
+        }
+    }
+
+    &__fb {
+        display: flex;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__main-menu {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            
+        }
+&  .active a{
+                color:$hover;
+                text-decoration: underline;
+            }
+        a {
+            @include main-menu;
+            color: $txt-h;
+            margin-left: 15px;
+        }
+    }
+    &__card{
+       margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+         gap:60px;
+           &__discripton{
+            
+            
+            display: flex;
+            flex-direction: column;
+            
+            &__wrapper-contacts{
+                display: flex;
+                flex-direction: row;
+                margin-top: 15px;
+                gap:20px;
+                 padding-bottom: 30px;
+                margin-bottom: 15px;
+                border-bottom: 4px solid $foter-line ;
+                li{
+                    color:$foter-line;
+                    & a{
+                        margin-right: 10px;
+                      color:$txt-h;}
+                }
+                
+              
+             }
+            }
+            
+           li:nth-child(1) a{
+                list-style: none;
+                color:$tab-color;
+                // background: greenyellow;
+           } 
+           & p{
+            margin-top:15px ;
+            @include font-p2;
+           }
+           & span{
+            margin-top:30px;
+            @include font-arrows;
+            color: $ar-color;
+           }
+    }
+     
+}
+.wrapper__footer {
+    padding-bottom: 30px;
+background: $tnoactivehover;
+    .content {
+        margin-top:60px ;
+        display: flex;
+        justify-content: space-between;
+
+        .footer__information {
+
+            margin-top: 30px;
+
+            &-adress {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+            }
+
+            &-adress :nth-child(1) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $ar-color;
+            }
+
+            &-adress :nth-child(3) {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $txt-h;
+            }
+
+            &-contacts {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #46466E;
+            }
+
+            &-contacts :nth-child(5) {
+
+                color: $txt-h;
+            }
+        }
+
+        .footer__copyright {
+            margin-top: 30px;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $tab-color;
+            }
+        }
+    }
+}

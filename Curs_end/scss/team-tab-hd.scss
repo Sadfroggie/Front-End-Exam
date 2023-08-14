@@ -1,0 +1,59 @@
+@media (max-width: $tab-hd) {
+    .content {
+        margin: auto;
+        max-width: $tab-hd;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .main__card img {
+            width: 300px;
+            height: 375px;
+        }
+
+        .main__card__discripton__wrapper {
+            max-width: 323px;
+            height: auto;
+            // margin-left: 10px;
+
+            &-contacts {
+                flex-direction: column;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+.main {
+
+    &__language-switcher {
+        margin-left: 5px;
+    }
+
+    &__address,
+    &__cell {
+        align-items: center;
+        margin-right: 4px;
+    }
+
+    &__main-menu {
+        margin-left: 20px;
+    }
+
+    &__tabs {
+
+        &-titles {
+            padding-right: 30px;
+            width: 40%;
+        }
+
+        &-body {
+            width: 54%;
+            margin-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@media (max-width: $mobile) {
+    body{
+        position: relative;
+    }
+    .mobile-background{
+        position: absolute;
+        top:-5px;
+        background:$noactivehover;
+        height: 45px;
+        width: 100%;
+    }
+    .mobile-slash{
+        display:block;
+        font-weight: 700;
+        font-size: 30px;
+        color:$hover;
+        margin-left: 5px;
+    }
+    .content {
+    margin: auto;
+    max-width: $mobile;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    .main__card {
+       position: static;
+       margin-top:50px ;
+img{
+   width: 315px;
+    height: auto;
+    padding-right:0 ;
+}
+        &__discripton__wrapper {
+            position:static;
+        }
+
+        &__discripton-miniarticle {
+            width: 100%;
+        }
+    }
+}
+.main {
+    &__header {
+        margin-left: 5px;
+        &-ham img{
+            display: block;
+            position: absolute;
+            left: 90%;
+        }
+    }
+
+
+    &__logo img {
+        width: 55%;
+        position: absolute;
+        left: -10%;
+        top: -140%;
+    }
+
+    &__info-menu {
+        padding-top: 8%;
+        padding-bottom: 8%;
+        padding-left: 10%;
+        padding-right: 10%;
+        top: -1px;
+        
+        .main__cell {
+            margin-left: 30%;
+             width: 125px;     
+        }
+    }
+
+    &__language-switcher {
+        margin-left: -16%;
+        
+        
+    }
+
+    &__language-switcher:after {
+        display: none;
+    }
+
+    &__address {
+        display: none;
+    }
+
+    .main__cell:after {
+        display: none;
+    }
+
+    .main__fb {
+        display: none;
+    }
+
+    &__main-menu {
+        flex-direction: column;
+
+        &-item {
+            display: none;
+        }
+
+        & :nth-child(3) {
+            display: block;
+            position: absolute;
+            top: -190px;
+            left: 74px;
+        }
+    }
+}
+.wrapper__footer .content {
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+
+    .footer__information-adress,
+    .footer__information-contacts {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}}

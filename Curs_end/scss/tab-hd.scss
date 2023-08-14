@@ -1,0 +1,76 @@
+@media (max-width: $tab-hd) {
+    .content {
+        margin: auto;
+        max-width: $tab-hd;
+        background-size: 700px 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .main {
+
+        &__language-switcher{
+            margin-left: 5px;
+        }
+        &__address,
+        &__cell {
+            align-items: center;
+            margin-right: 4px;
+        }
+
+        &__main-menu {
+            margin-left: 20px;
+        }
+
+        &__tabs {
+
+            &-titles {
+                padding-right: 30px;
+                width: 40%;
+            }
+
+            &-body {
+                width: 54%;
+                margin-left: 30px;
+            }
+        }
+
+        &__better__cards {
+            justify-content: space-between;
+
+            &-card {
+                margin-top: 30px;
+                width: 29%;
+            }
+
+        }
+    }
+
+
+    .slider__active {
+        gap: 15px;
+
+        img {
+            // align-self: stretch;
+            height: 315px;
+            width: 300px;
+        }
+
+        p {
+            width: auto;
+        }
+
+        h2 {
+            font-size: 29px;
+            line-height: 28px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .publications__list__cards {
+        gap: 10px;
+        justify-content: center;
+    }
+
+   
+}
